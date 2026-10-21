@@ -1,0 +1,15 @@
+# System junk
+.DS_Store
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Data and report files
+*.xlsx
+*.csv
+*.pdf
+*.png
+*.xls
+*[gG][mM][eE]*
+

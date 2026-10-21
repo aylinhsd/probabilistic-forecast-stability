@@ -1,0 +1,11 @@
+{
+  "data": "/Users/aylin/Documents/FBK/codes/Entsoe dataRev/ENTSOE_ML_dataset_updated.csv",
+  "start": "2025-07-01",
+  "end": "2026-10-13",
+  "frequency": "monthly",
+  "window": "expanding",
+  "window_days": 1095,
+  "calibration_days": 181,
+  "alpha": 1.0,
+  "max_iter": 100000
+}
