@@ -13,3 +13,4 @@ __pycache__/
 *.xls
 *[gG][mM][eE]*
 
+.venv/
