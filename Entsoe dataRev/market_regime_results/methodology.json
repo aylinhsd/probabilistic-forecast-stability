@@ -1,0 +1,35 @@
+{
+  "scope": "Exploratory subgroup analysis; not a causal attribution or formal change-point test",
+  "models": [
+    "LEAR_v3",
+    "Previous_LEAR",
+    "LEAR_style",
+    "Seasonal_naive"
+  ],
+  "common_test_hours": 11280,
+  "validation_period": "2025-01-01 to 2025-06-30, Italy local",
+  "test_period_start": "2025-07-01, Italy local",
+  "probabilistic_method": "pooled validation residual quantile shifts",
+  "crps": "2*trapezoidal integration of pinball losses over Q01..Q99; tails omitted",
+  "regime_threshold_source": "Jul 2025-Feb 2026 daily realized prices (test-period exploratory baseline)",
+  "volatility_tertile_cutoffs": [
+    12.661016958815672,
+    17.50747120696786
+  ],
+  "price_tertile_cutoffs": [
+    109.2248611111111,
+    117.27527777777779
+  ],
+  "volatility_definition": "standard deviation of realized hourly prices within each local day",
+  "price_definition": "mean realized hourly price within each local day",
+  "holiday_scope": "Italian national public holidays; Easter Sunday and Monday; no regional holidays",
+  "cautions": [
+    "Regime labels use realized prices: descriptive only, not information available at forecast issue time",
+    "Period boundaries selected after viewing test outcomes; exploratory, not confirmatory",
+    "Daily PI coverage is noisy with roughly 24 hourly observations",
+    "Holiday and extreme-price subsets may be small",
+    "All probabilistic baseline intervals have constant widths",
+    "Month/season comparisons confounded with changing year/regime",
+    "No statistical significance or causal claim is implied"
+  ]
+}
