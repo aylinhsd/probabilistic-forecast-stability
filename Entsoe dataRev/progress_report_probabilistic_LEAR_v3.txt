@@ -1,0 +1,72 @@
+# Progress Report — Probabilistic LEAR v3 and Forecast Stability Monitoring
+
+**Research topic:** Probabilistic Day-Ahead Electricity Price Forecasting  
+**Market:** Italian North Bidding Zone (IT-North)  
+**Evaluation period:** 1 July 2025 – 13 October 2026  
+**Test dataset:** 470 days (11,280 hourly observations)
+
+## 1. Objective
+
+The objective of this stage was to evaluate the performance of the native Probabilistic LEAR v3 model under changing electricity market conditions and implement an initial framework for monitoring forecast stability over time.
+
+This work contributes to the broader research workflow:
+
+**Forecasting → Stability Monitoring → Degradation Detection → Potential Model Maintenance or Retraining**
+
+## 2. Work Performed
+
+The following analyses were completed:
+
+1. **Probabilistic forecast evaluation:** Evaluated the model using approximate Continuous Ranked Probability Score (CRPS), empirical prediction interval coverage, and prediction interval width for nominal coverage levels of 80%, 85%, and 90%.
+
+2. **Performance across market periods:** Compared probabilistic forecast performance across five periods to investigate changes in calibration and uncertainty.
+
+3. **Stability monitoring:** Implemented 30-day rolling indicators for prediction interval coverage, approximate CRPS, and interval width.
+
+4. **Market volatility comparison:** Compared the evolution of forecast uncertainty with observed daily electricity price volatility, calculated as the standard deviation of hourly prices within each day.
+
+5. **Results and reproducibility:** Generated diagnostic figures, daily monitoring data, and Python scripts. The implementation and results were synchronized with the GitHub repository.
+
+## 3. Main Results
+
+Across the complete test period:
+
+| Evaluation metric | Result |
+|---|---:|
+| Approximate CRPS | 8.10 €/MWh |
+| Empirical PI80 coverage | 83.96% |
+| Mean PI80 width | 36.80 €/MWh |
+| Empirical PI85 coverage | 88.71% |
+| Empirical PI90 coverage | 92.67% |
+
+The analysis revealed differences in probabilistic forecast performance across market periods. For example, PI80 coverage decreased from 87.23% during July 2025–February 2026 to 75.82% during May–June 2026, while the mean interval width increased from 28.11 to 44.85 €/MWh.
+
+During August–October 2026, the mean PI80 width increased further to 53.51 €/MWh, while empirical coverage recovered to 84.29%.
+
+These findings indicate that forecast uncertainty and interval calibration varied over time. The model produced wider intervals during later market periods, although this did not always correspond to improved coverage.
+
+## 4. Stability-Monitoring Findings
+
+The 30-day rolling analysis provided a time-dependent view of forecast performance rather than relying only on aggregate evaluation metrics.
+
+The monitoring results show:
+
+- Changes in empirical interval coverage, including periods of undercoverage.
+- Increases in approximate CRPS during parts of 2026.
+- Widening prediction intervals alongside changes in observed electricity price volatility.
+
+These patterns suggest that rolling performance indicators could be useful for identifying periods requiring further model-performance investigation.
+
+However, changes in these indicators do not, by themselves, establish model degradation. Formal detection criteria and their sensitivity to market conditions still need to be evaluated.
+
+## 5. Next Steps
+
+The next stage will focus on developing and evaluating a degradation-detection approach based on the monitoring indicators.
+
+Planned activities include establishing reference performance, investigating detection thresholds, and evaluating whether changes in coverage and CRPS can provide meaningful warnings of deteriorating forecast reliability.
+
+The longer-term objective is to assess how these signals could support decisions regarding model recalibration or retraining.
+
+---
+
+**Supporting files:** Stability-monitoring figure, daily monitoring CSV, probabilistic forecasting diagnostic figures, and corresponding Python scripts.
