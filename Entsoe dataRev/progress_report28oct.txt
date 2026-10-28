@@ -1,0 +1,19 @@
+### Data Leakage Verification – Point and Probabilistic LEAR v3
+
+A data leakage verification was performed to ensure that the LEAR v3 forecasting models do not use information from the target delivery day or future observations during model training and evaluation.
+
+Both Point LEAR v3 and Probabilistic LEAR v3 use the same dataset (`ENTSOE_ML_dataset_updated.csv`) and the same 215 input features, including 168 hourly price lags, historical daily price statistics, and calendar variables.
+
+The following checks were performed:
+
+1. **Chronological data splitting:** Training data ends on December 31, 2024; validation covers January–June 2025; and testing begins on July 1, 2025.
+2. **Historical feature verification:** Hourly price lags are calculated relative to midnight at the start of the target delivery day, rather than relative to individual target hours. All lagged prices therefore belong to previous delivery days.
+3. **Feature consistency:** The validation script (`check_ml_features.py`) independently compared the hourly lag values and daily statistics against historical electricity prices. All checks passed.
+4. **Forecast timing:** Forecasts are issued on the previous calendar day (D−1). The dataset checks that target delivery timestamps occur after forecast issuance and that no hourly lag refers to the target delivery day.
+5. **Training-only preprocessing:** Standardization parameters are fitted exclusively on training data, preventing validation and test information from influencing feature scaling.
+
+**Verification result:** The validation script reported `OVERALL: ALL CHECKS PASSED`. No target-day price leakage or preprocessing leakage was identified in the inspected pipeline.
+
+**Remaining qualification:** The dataset assumes that all D−1 day-ahead prices are published before the specified forecast issue time. This assumption still requires independent verification against historical market publication schedules. Therefore, the checks support the absence of target-day leakage but do not yet establish complete publication-time availability for every historical input.
+
+These findings apply to both the point and probabilistic LEAR v3 models because they share the same input dataset and feature construction.
