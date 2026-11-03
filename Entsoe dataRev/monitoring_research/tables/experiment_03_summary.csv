@@ -1,0 +1,3 @@
+method,total_alert_days,alert_episodes,alert_days_before_onset,alert_days_in_prior_7_days,last_prior_alert,lead_days_from_last_prior_alert
+fixed,181,20,6,3,2026-03-10,1
+adaptive,43,24,7,4,2026-03-10,1

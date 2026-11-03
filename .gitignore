@@ -14,3 +14,8 @@ __pycache__/
 *[gG][mM][eE]*
 
 .venv/
+
+# Track LEAR monitoring research outputs
+!Entsoe dataRev/monitoring_research/tables/*.csv
+!Entsoe dataRev/monitoring_research/figures/*.png
+!Entsoe dataRev/monitoring_research/figures/*.pdf

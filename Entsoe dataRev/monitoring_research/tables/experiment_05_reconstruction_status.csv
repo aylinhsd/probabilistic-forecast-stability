@@ -1,0 +1,7 @@
+period,pit_status,count
+Calibration,interpolated,4370
+Calibration,lower_tail,40
+Calibration,upper_tail,7
+Evaluation,interpolated,6708
+Evaluation,lower_tail,102
+Evaluation,upper_tail,53
