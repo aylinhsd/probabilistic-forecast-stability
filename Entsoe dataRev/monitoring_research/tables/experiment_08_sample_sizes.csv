@@ -1,0 +1,5 @@
+granularity,period,days_total,days_complete
+daily,calibration,184,184
+daily,evaluation,286,286
+rolling30,calibration,184,170
+rolling30,evaluation,286,286

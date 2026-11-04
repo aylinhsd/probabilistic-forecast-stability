@@ -1,0 +1,55 @@
+granularity,period,method,indicator_a,indicator_b,correlation,absolute_correlation
+daily,calibration,pearson,CRPS,MAE,0.986100,0.986100
+daily,calibration,pearson,CRPS,RMSE,0.980097,0.980097
+daily,calibration,pearson,MAE,RMSE,0.973133,0.973133
+daily,calibration,pearson,CRPS,Interval score 80%,0.951140,0.951140
+daily,calibration,pearson,RMSE,Interval score 80%,0.925506,0.925506
+daily,calibration,pearson,MAE,Interval score 80%,0.893728,0.893728
+daily,calibration,spearman,CRPS,MAE,0.982372,0.982372
+daily,calibration,spearman,MAE,RMSE,0.975263,0.975263
+daily,calibration,spearman,CRPS,RMSE,0.971322,0.971322
+daily,calibration,spearman,CRPS,Interval score 80%,0.917678,0.917678
+daily,calibration,spearman,RMSE,Interval score 80%,0.856329,0.856329
+daily,evaluation,pearson,CRPS,MAE,0.988881,0.988881
+daily,evaluation,pearson,MAE,RMSE,0.978973,0.978973
+daily,evaluation,pearson,CRPS,RMSE,0.978681,0.978681
+daily,evaluation,pearson,CRPS,Interval score 80%,0.966499,0.966499
+daily,evaluation,pearson,RMSE,Interval score 80%,0.934387,0.934387
+daily,evaluation,pearson,MAE,Interval score 80%,0.922547,0.922547
+daily,evaluation,spearman,MAE,RMSE,0.988946,0.988946
+daily,evaluation,spearman,CRPS,MAE,0.986789,0.986789
+daily,evaluation,spearman,CRPS,RMSE,0.985597,0.985597
+daily,evaluation,spearman,CRPS,Interval score 80%,0.960097,0.960097
+daily,evaluation,spearman,RMSE,Interval score 80%,0.926410,0.926410
+daily,evaluation,spearman,MAE,Interval score 80%,0.912561,0.912561
+rolling30,calibration,pearson,CRPS,MAE,0.990232,0.990232
+rolling30,calibration,pearson,MAE,RMSE,0.974055,0.974055
+rolling30,calibration,pearson,CRPS,Interval score 80%,0.961605,0.961605
+rolling30,calibration,pearson,CRPS,RMSE,0.953749,0.953749
+rolling30,calibration,pearson,MAE,Interval score 80%,0.916653,0.916653
+rolling30,calibration,pearson,RMSE,Interval score 80%,0.871794,0.871794
+rolling30,calibration,spearman,CRPS,MAE,0.980447,0.980447
+rolling30,calibration,spearman,MAE,RMSE,0.971197,0.971197
+rolling30,calibration,spearman,CRPS,Interval score 80%,0.963987,0.963987
+rolling30,calibration,spearman,CRPS,RMSE,0.941346,0.941346
+rolling30,calibration,spearman,MAE,Interval score 80%,0.904671,0.904671
+rolling30,calibration,spearman,RMSE,Interval score 80%,0.861694,0.861694
+rolling30,evaluation,pearson,CRPS,MAE,0.998703,0.998703
+rolling30,evaluation,pearson,CRPS,Interval score 80%,0.996764,0.996764
+rolling30,evaluation,pearson,MAE,RMSE,0.995473,0.995473
+rolling30,evaluation,pearson,CRPS,RMSE,0.994841,0.994841
+rolling30,evaluation,pearson,MAE,Interval score 80%,0.991993,0.991993
+rolling30,evaluation,pearson,RMSE,Interval score 80%,0.991035,0.991035
+rolling30,evaluation,pearson,MAE,|PIT variance - 1/12|,-0.928440,0.928440
+rolling30,evaluation,pearson,CRPS,|PIT variance - 1/12|,-0.927129,0.927129
+rolling30,evaluation,pearson,RMSE,|PIT variance - 1/12|,-0.925852,0.925852
+rolling30,evaluation,pearson,Interval score 80%,|PIT variance - 1/12|,-0.922599,0.922599
+rolling30,evaluation,spearman,CRPS,MAE,0.995645,0.995645
+rolling30,evaluation,spearman,CRPS,RMSE,0.990824,0.990824
+rolling30,evaluation,spearman,CRPS,Interval score 80%,0.986974,0.986974
+rolling30,evaluation,spearman,MAE,RMSE,0.986882,0.986882
+rolling30,evaluation,spearman,RMSE,Interval score 80%,0.984102,0.984102
+rolling30,evaluation,spearman,MAE,Interval score 80%,0.971513,0.971513
+rolling30,evaluation,spearman,RMSE,|PIT variance - 1/12|,-0.875212,0.875212
+rolling30,evaluation,spearman,MAE,|PIT variance - 1/12|,-0.868887,0.868887
+rolling30,evaluation,spearman,CRPS,|PIT variance - 1/12|,-0.859086,0.859086

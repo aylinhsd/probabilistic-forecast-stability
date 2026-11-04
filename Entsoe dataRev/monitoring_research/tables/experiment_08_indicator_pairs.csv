@@ -1,0 +1,225 @@
+granularity,period,method,indicator_a,indicator_b,correlation,absolute_correlation
+daily,calibration,pearson,CRPS,MAE,0.986100,0.986100
+daily,calibration,pearson,CRPS,RMSE,0.980097,0.980097
+daily,calibration,pearson,CRPS,Interval score 80%,0.951140,0.951140
+daily,calibration,pearson,CRPS,|Coverage80 - 0.80|,-0.018465,0.018465
+daily,calibration,pearson,CRPS,|PIT mean - 0.50|,0.515048,0.515048
+daily,calibration,pearson,CRPS,|PIT variance - 1/12|,-0.185543,0.185543
+daily,calibration,pearson,MAE,RMSE,0.973133,0.973133
+daily,calibration,pearson,MAE,Interval score 80%,0.893728,0.893728
+daily,calibration,pearson,MAE,|Coverage80 - 0.80|,-0.068280,0.068280
+daily,calibration,pearson,MAE,|PIT mean - 0.50|,0.544566,0.544566
+daily,calibration,pearson,MAE,|PIT variance - 1/12|,-0.218700,0.218700
+daily,calibration,pearson,RMSE,Interval score 80%,0.925506,0.925506
+daily,calibration,pearson,RMSE,|Coverage80 - 0.80|,-0.087723,0.087723
+daily,calibration,pearson,RMSE,|PIT mean - 0.50|,0.458766,0.458766
+daily,calibration,pearson,RMSE,|PIT variance - 1/12|,-0.239736,0.239736
+daily,calibration,pearson,Interval score 80%,|Coverage80 - 0.80|,0.088542,0.088542
+daily,calibration,pearson,Interval score 80%,|PIT mean - 0.50|,0.412699,0.412699
+daily,calibration,pearson,Interval score 80%,|PIT variance - 1/12|,-0.114186,0.114186
+daily,calibration,pearson,|Coverage80 - 0.80|,|PIT mean - 0.50|,-0.115711,0.115711
+daily,calibration,pearson,|Coverage80 - 0.80|,|PIT variance - 1/12|,0.356209,0.356209
+daily,calibration,pearson,|PIT mean - 0.50|,|PIT variance - 1/12|,0.314786,0.314786
+daily,calibration,pearson,Width 80% (forecast-time),CRPS,0.381731,0.381731
+daily,calibration,pearson,Width 80% (forecast-time),MAE,0.374248,0.374248
+daily,calibration,pearson,Width 80% (forecast-time),RMSE,0.354386,0.354386
+daily,calibration,pearson,Width 80% (forecast-time),Interval score 80%,0.354495,0.354495
+daily,calibration,pearson,Width 80% (forecast-time),|Coverage80 - 0.80|,0.017471,0.017471
+daily,calibration,pearson,Width 80% (forecast-time),|PIT mean - 0.50|,0.046334,0.046334
+daily,calibration,pearson,Width 80% (forecast-time),|PIT variance - 1/12|,0.066241,0.066241
+daily,calibration,spearman,CRPS,MAE,0.982372,0.982372
+daily,calibration,spearman,CRPS,RMSE,0.971322,0.971322
+daily,calibration,spearman,CRPS,Interval score 80%,0.917678,0.917678
+daily,calibration,spearman,CRPS,|Coverage80 - 0.80|,-0.362403,0.362403
+daily,calibration,spearman,CRPS,|PIT mean - 0.50|,0.484764,0.484764
+daily,calibration,spearman,CRPS,|PIT variance - 1/12|,-0.322485,0.322485
+daily,calibration,spearman,MAE,RMSE,0.975263,0.975263
+daily,calibration,spearman,MAE,Interval score 80%,0.849045,0.849045
+daily,calibration,spearman,MAE,|Coverage80 - 0.80|,-0.369277,0.369277
+daily,calibration,spearman,MAE,|PIT mean - 0.50|,0.495839,0.495839
+daily,calibration,spearman,MAE,|PIT variance - 1/12|,-0.349743,0.349743
+daily,calibration,spearman,RMSE,Interval score 80%,0.856329,0.856329
+daily,calibration,spearman,RMSE,|Coverage80 - 0.80|,-0.383109,0.383109
+daily,calibration,spearman,RMSE,|PIT mean - 0.50|,0.438685,0.438685
+daily,calibration,spearman,RMSE,|PIT variance - 1/12|,-0.370280,0.370280
+daily,calibration,spearman,Interval score 80%,|Coverage80 - 0.80|,-0.225787,0.225787
+daily,calibration,spearman,Interval score 80%,|PIT mean - 0.50|,0.384034,0.384034
+daily,calibration,spearman,Interval score 80%,|PIT variance - 1/12|,-0.195502,0.195502
+daily,calibration,spearman,|Coverage80 - 0.80|,|PIT mean - 0.50|,-0.201363,0.201363
+daily,calibration,spearman,|Coverage80 - 0.80|,|PIT variance - 1/12|,0.362661,0.362661
+daily,calibration,spearman,|PIT mean - 0.50|,|PIT variance - 1/12|,0.286596,0.286596
+daily,calibration,spearman,Width 80% (forecast-time),CRPS,0.422477,0.422477
+daily,calibration,spearman,Width 80% (forecast-time),MAE,0.346682,0.346682
+daily,calibration,spearman,Width 80% (forecast-time),RMSE,0.340302,0.340302
+daily,calibration,spearman,Width 80% (forecast-time),Interval score 80%,0.591000,0.591000
+daily,calibration,spearman,Width 80% (forecast-time),|Coverage80 - 0.80|,0.042494,0.042494
+daily,calibration,spearman,Width 80% (forecast-time),|PIT mean - 0.50|,0.024008,0.024008
+daily,calibration,spearman,Width 80% (forecast-time),|PIT variance - 1/12|,0.073285,0.073285
+daily,evaluation,pearson,CRPS,MAE,0.988881,0.988881
+daily,evaluation,pearson,CRPS,RMSE,0.978681,0.978681
+daily,evaluation,pearson,CRPS,Interval score 80%,0.966499,0.966499
+daily,evaluation,pearson,CRPS,|Coverage80 - 0.80|,0.301065,0.301065
+daily,evaluation,pearson,CRPS,|PIT mean - 0.50|,0.321684,0.321684
+daily,evaluation,pearson,CRPS,|PIT variance - 1/12|,-0.084742,0.084742
+daily,evaluation,pearson,MAE,RMSE,0.978973,0.978973
+daily,evaluation,pearson,MAE,Interval score 80%,0.922547,0.922547
+daily,evaluation,pearson,MAE,|Coverage80 - 0.80|,0.274236,0.274236
+daily,evaluation,pearson,MAE,|PIT mean - 0.50|,0.343319,0.343319
+daily,evaluation,pearson,MAE,|PIT variance - 1/12|,-0.094114,0.094114
+daily,evaluation,pearson,RMSE,Interval score 80%,0.934387,0.934387
+daily,evaluation,pearson,RMSE,|Coverage80 - 0.80|,0.192222,0.192222
+daily,evaluation,pearson,RMSE,|PIT mean - 0.50|,0.266136,0.266136
+daily,evaluation,pearson,RMSE,|PIT variance - 1/12|,-0.162602,0.162602
+daily,evaluation,pearson,Interval score 80%,|Coverage80 - 0.80|,0.336130,0.336130
+daily,evaluation,pearson,Interval score 80%,|PIT mean - 0.50|,0.257040,0.257040
+daily,evaluation,pearson,Interval score 80%,|PIT variance - 1/12|,-0.068838,0.068838
+daily,evaluation,pearson,|Coverage80 - 0.80|,|PIT mean - 0.50|,0.209795,0.209795
+daily,evaluation,pearson,|Coverage80 - 0.80|,|PIT variance - 1/12|,0.444980,0.444980
+daily,evaluation,pearson,|PIT mean - 0.50|,|PIT variance - 1/12|,0.447762,0.447762
+daily,evaluation,pearson,Width 80% (forecast-time),CRPS,0.431835,0.431835
+daily,evaluation,pearson,Width 80% (forecast-time),MAE,0.439411,0.439411
+daily,evaluation,pearson,Width 80% (forecast-time),RMSE,0.412981,0.412981
+daily,evaluation,pearson,Width 80% (forecast-time),Interval score 80%,0.371078,0.371078
+daily,evaluation,pearson,Width 80% (forecast-time),|Coverage80 - 0.80|,-0.062180,0.062180
+daily,evaluation,pearson,Width 80% (forecast-time),|PIT mean - 0.50|,-0.104639,0.104639
+daily,evaluation,pearson,Width 80% (forecast-time),|PIT variance - 1/12|,-0.172164,0.172164
+daily,evaluation,spearman,CRPS,MAE,0.986789,0.986789
+daily,evaluation,spearman,CRPS,RMSE,0.985597,0.985597
+daily,evaluation,spearman,CRPS,Interval score 80%,0.960097,0.960097
+daily,evaluation,spearman,CRPS,|Coverage80 - 0.80|,-0.016418,0.016418
+daily,evaluation,spearman,CRPS,|PIT mean - 0.50|,0.269598,0.269598
+daily,evaluation,spearman,CRPS,|PIT variance - 1/12|,-0.264706,0.264706
+daily,evaluation,spearman,MAE,RMSE,0.988946,0.988946
+daily,evaluation,spearman,MAE,Interval score 80%,0.912561,0.912561
+daily,evaluation,spearman,MAE,|Coverage80 - 0.80|,-0.037180,0.037180
+daily,evaluation,spearman,MAE,|PIT mean - 0.50|,0.307491,0.307491
+daily,evaluation,spearman,MAE,|PIT variance - 1/12|,-0.274723,0.274723
+daily,evaluation,spearman,RMSE,Interval score 80%,0.926410,0.926410
+daily,evaluation,spearman,RMSE,|Coverage80 - 0.80|,-0.064377,0.064377
+daily,evaluation,spearman,RMSE,|PIT mean - 0.50|,0.263116,0.263116
+daily,evaluation,spearman,RMSE,|PIT variance - 1/12|,-0.302365,0.302365
+daily,evaluation,spearman,Interval score 80%,|Coverage80 - 0.80|,0.026301,0.026301
+daily,evaluation,spearman,Interval score 80%,|PIT mean - 0.50|,0.179186,0.179186
+daily,evaluation,spearman,Interval score 80%,|PIT variance - 1/12|,-0.233635,0.233635
+daily,evaluation,spearman,|Coverage80 - 0.80|,|PIT mean - 0.50|,-0.028947,0.028947
+daily,evaluation,spearman,|Coverage80 - 0.80|,|PIT variance - 1/12|,0.407108,0.407108
+daily,evaluation,spearman,|PIT mean - 0.50|,|PIT variance - 1/12|,0.353790,0.353790
+daily,evaluation,spearman,Width 80% (forecast-time),CRPS,0.572566,0.572566
+daily,evaluation,spearman,Width 80% (forecast-time),MAE,0.527606,0.527606
+daily,evaluation,spearman,Width 80% (forecast-time),RMSE,0.514622,0.514622
+daily,evaluation,spearman,Width 80% (forecast-time),Interval score 80%,0.614399,0.614399
+daily,evaluation,spearman,Width 80% (forecast-time),|Coverage80 - 0.80|,-0.024714,0.024714
+daily,evaluation,spearman,Width 80% (forecast-time),|PIT mean - 0.50|,-0.110716,0.110716
+daily,evaluation,spearman,Width 80% (forecast-time),|PIT variance - 1/12|,-0.192721,0.192721
+rolling30,calibration,pearson,CRPS,MAE,0.990232,0.990232
+rolling30,calibration,pearson,CRPS,RMSE,0.953749,0.953749
+rolling30,calibration,pearson,CRPS,Interval score 80%,0.961605,0.961605
+rolling30,calibration,pearson,CRPS,|Coverage80 - 0.80|,0.283238,0.283238
+rolling30,calibration,pearson,CRPS,|PIT mean - 0.50|,0.707904,0.707904
+rolling30,calibration,pearson,CRPS,|PIT variance - 1/12|,0.445686,0.445686
+rolling30,calibration,pearson,MAE,RMSE,0.974055,0.974055
+rolling30,calibration,pearson,MAE,Interval score 80%,0.916653,0.916653
+rolling30,calibration,pearson,MAE,|Coverage80 - 0.80|,0.244365,0.244365
+rolling30,calibration,pearson,MAE,|PIT mean - 0.50|,0.691234,0.691234
+rolling30,calibration,pearson,MAE,|PIT variance - 1/12|,0.386459,0.386459
+rolling30,calibration,pearson,RMSE,Interval score 80%,0.871794,0.871794
+rolling30,calibration,pearson,RMSE,|Coverage80 - 0.80|,0.112330,0.112330
+rolling30,calibration,pearson,RMSE,|PIT mean - 0.50|,0.606436,0.606436
+rolling30,calibration,pearson,RMSE,|PIT variance - 1/12|,0.209091,0.209091
+rolling30,calibration,pearson,Interval score 80%,|Coverage80 - 0.80|,0.304040,0.304040
+rolling30,calibration,pearson,Interval score 80%,|PIT mean - 0.50|,0.680117,0.680117
+rolling30,calibration,pearson,Interval score 80%,|PIT variance - 1/12|,0.488303,0.488303
+rolling30,calibration,pearson,|Coverage80 - 0.80|,|PIT mean - 0.50|,0.280591,0.280591
+rolling30,calibration,pearson,|Coverage80 - 0.80|,|PIT variance - 1/12|,0.723376,0.723376
+rolling30,calibration,pearson,|PIT mean - 0.50|,|PIT variance - 1/12|,0.593668,0.593668
+rolling30,calibration,pearson,Width 80% (forecast-time),CRPS,0.524375,0.524375
+rolling30,calibration,pearson,Width 80% (forecast-time),MAE,0.473109,0.473109
+rolling30,calibration,pearson,Width 80% (forecast-time),RMSE,0.405294,0.405294
+rolling30,calibration,pearson,Width 80% (forecast-time),Interval score 80%,0.562807,0.562807
+rolling30,calibration,pearson,Width 80% (forecast-time),|Coverage80 - 0.80|,0.280755,0.280755
+rolling30,calibration,pearson,Width 80% (forecast-time),|PIT mean - 0.50|,0.169328,0.169328
+rolling30,calibration,pearson,Width 80% (forecast-time),|PIT variance - 1/12|,0.604553,0.604553
+rolling30,calibration,spearman,CRPS,MAE,0.980447,0.980447
+rolling30,calibration,spearman,CRPS,RMSE,0.941346,0.941346
+rolling30,calibration,spearman,CRPS,Interval score 80%,0.963987,0.963987
+rolling30,calibration,spearman,CRPS,|Coverage80 - 0.80|,0.376300,0.376300
+rolling30,calibration,spearman,CRPS,|PIT mean - 0.50|,0.698221,0.698221
+rolling30,calibration,spearman,CRPS,|PIT variance - 1/12|,0.479713,0.479713
+rolling30,calibration,spearman,MAE,RMSE,0.971197,0.971197
+rolling30,calibration,spearman,MAE,Interval score 80%,0.904671,0.904671
+rolling30,calibration,spearman,MAE,|Coverage80 - 0.80|,0.373520,0.373520
+rolling30,calibration,spearman,MAE,|PIT mean - 0.50|,0.676431,0.676431
+rolling30,calibration,spearman,MAE,|PIT variance - 1/12|,0.419461,0.419461
+rolling30,calibration,spearman,RMSE,Interval score 80%,0.861694,0.861694
+rolling30,calibration,spearman,RMSE,|Coverage80 - 0.80|,0.329937,0.329937
+rolling30,calibration,spearman,RMSE,|PIT mean - 0.50|,0.598659,0.598659
+rolling30,calibration,spearman,RMSE,|PIT variance - 1/12|,0.294486,0.294486
+rolling30,calibration,spearman,Interval score 80%,|Coverage80 - 0.80|,0.352755,0.352755
+rolling30,calibration,spearman,Interval score 80%,|PIT mean - 0.50|,0.668387,0.668387
+rolling30,calibration,spearman,Interval score 80%,|PIT variance - 1/12|,0.509236,0.509236
+rolling30,calibration,spearman,|Coverage80 - 0.80|,|PIT mean - 0.50|,0.283181,0.283181
+rolling30,calibration,spearman,|Coverage80 - 0.80|,|PIT variance - 1/12|,0.652249,0.652249
+rolling30,calibration,spearman,|PIT mean - 0.50|,|PIT variance - 1/12|,0.590647,0.590647
+rolling30,calibration,spearman,Width 80% (forecast-time),CRPS,0.491935,0.491935
+rolling30,calibration,spearman,Width 80% (forecast-time),MAE,0.436447,0.436447
+rolling30,calibration,spearman,Width 80% (forecast-time),RMSE,0.401030,0.401030
+rolling30,calibration,spearman,Width 80% (forecast-time),Interval score 80%,0.534890,0.534890
+rolling30,calibration,spearman,Width 80% (forecast-time),|Coverage80 - 0.80|,0.214412,0.214412
+rolling30,calibration,spearman,Width 80% (forecast-time),|PIT mean - 0.50|,0.166341,0.166341
+rolling30,calibration,spearman,Width 80% (forecast-time),|PIT variance - 1/12|,0.588129,0.588129
+rolling30,evaluation,pearson,CRPS,MAE,0.998703,0.998703
+rolling30,evaluation,pearson,CRPS,RMSE,0.994841,0.994841
+rolling30,evaluation,pearson,CRPS,Interval score 80%,0.996764,0.996764
+rolling30,evaluation,pearson,CRPS,|Coverage80 - 0.80|,-0.654395,0.654395
+rolling30,evaluation,pearson,CRPS,|PIT mean - 0.50|,-0.182122,0.182122
+rolling30,evaluation,pearson,CRPS,|PIT variance - 1/12|,-0.927129,0.927129
+rolling30,evaluation,pearson,MAE,RMSE,0.995473,0.995473
+rolling30,evaluation,pearson,MAE,Interval score 80%,0.991993,0.991993
+rolling30,evaluation,pearson,MAE,|Coverage80 - 0.80|,-0.656113,0.656113
+rolling30,evaluation,pearson,MAE,|PIT mean - 0.50|,-0.172527,0.172527
+rolling30,evaluation,pearson,MAE,|PIT variance - 1/12|,-0.928440,0.928440
+rolling30,evaluation,pearson,RMSE,Interval score 80%,0.991035,0.991035
+rolling30,evaluation,pearson,RMSE,|Coverage80 - 0.80|,-0.661703,0.661703
+rolling30,evaluation,pearson,RMSE,|PIT mean - 0.50|,-0.192722,0.192722
+rolling30,evaluation,pearson,RMSE,|PIT variance - 1/12|,-0.925852,0.925852
+rolling30,evaluation,pearson,Interval score 80%,|Coverage80 - 0.80|,-0.639426,0.639426
+rolling30,evaluation,pearson,Interval score 80%,|PIT mean - 0.50|,-0.199215,0.199215
+rolling30,evaluation,pearson,Interval score 80%,|PIT variance - 1/12|,-0.922599,0.922599
+rolling30,evaluation,pearson,|Coverage80 - 0.80|,|PIT mean - 0.50|,0.338074,0.338074
+rolling30,evaluation,pearson,|Coverage80 - 0.80|,|PIT variance - 1/12|,0.675447,0.675447
+rolling30,evaluation,pearson,|PIT mean - 0.50|,|PIT variance - 1/12|,0.344343,0.344343
+rolling30,evaluation,pearson,Width 80% (forecast-time),CRPS,0.879689,0.879689
+rolling30,evaluation,pearson,Width 80% (forecast-time),MAE,0.873225,0.873225
+rolling30,evaluation,pearson,Width 80% (forecast-time),RMSE,0.853293,0.853293
+rolling30,evaluation,pearson,Width 80% (forecast-time),Interval score 80%,0.874806,0.874806
+rolling30,evaluation,pearson,Width 80% (forecast-time),|Coverage80 - 0.80|,-0.707206,0.707206
+rolling30,evaluation,pearson,Width 80% (forecast-time),|PIT mean - 0.50|,-0.373590,0.373590
+rolling30,evaluation,pearson,Width 80% (forecast-time),|PIT variance - 1/12|,-0.809753,0.809753
+rolling30,evaluation,spearman,CRPS,MAE,0.995645,0.995645
+rolling30,evaluation,spearman,CRPS,RMSE,0.990824,0.990824
+rolling30,evaluation,spearman,CRPS,Interval score 80%,0.986974,0.986974
+rolling30,evaluation,spearman,CRPS,|Coverage80 - 0.80|,-0.517629,0.517629
+rolling30,evaluation,spearman,CRPS,|PIT mean - 0.50|,-0.111592,0.111592
+rolling30,evaluation,spearman,CRPS,|PIT variance - 1/12|,-0.859086,0.859086
+rolling30,evaluation,spearman,MAE,RMSE,0.986882,0.986882
+rolling30,evaluation,spearman,MAE,Interval score 80%,0.971513,0.971513
+rolling30,evaluation,spearman,MAE,|Coverage80 - 0.80|,-0.533244,0.533244
+rolling30,evaluation,spearman,MAE,|PIT mean - 0.50|,-0.110823,0.110823
+rolling30,evaluation,spearman,MAE,|PIT variance - 1/12|,-0.868887,0.868887
+rolling30,evaluation,spearman,RMSE,Interval score 80%,0.984102,0.984102
+rolling30,evaluation,spearman,RMSE,|Coverage80 - 0.80|,-0.536565,0.536565
+rolling30,evaluation,spearman,RMSE,|PIT mean - 0.50|,-0.128831,0.128831
+rolling30,evaluation,spearman,RMSE,|PIT variance - 1/12|,-0.875212,0.875212
+rolling30,evaluation,spearman,Interval score 80%,|Coverage80 - 0.80|,-0.501928,0.501928
+rolling30,evaluation,spearman,Interval score 80%,|PIT mean - 0.50|,-0.148411,0.148411
+rolling30,evaluation,spearman,Interval score 80%,|PIT variance - 1/12|,-0.837257,0.837257
+rolling30,evaluation,spearman,|Coverage80 - 0.80|,|PIT mean - 0.50|,0.349436,0.349436
+rolling30,evaluation,spearman,|Coverage80 - 0.80|,|PIT variance - 1/12|,0.603574,0.603574
+rolling30,evaluation,spearman,|PIT mean - 0.50|,|PIT variance - 1/12|,0.334838,0.334838
+rolling30,evaluation,spearman,Width 80% (forecast-time),CRPS,0.729605,0.729605
+rolling30,evaluation,spearman,Width 80% (forecast-time),MAE,0.738089,0.738089
+rolling30,evaluation,spearman,Width 80% (forecast-time),RMSE,0.706939,0.706939
+rolling30,evaluation,spearman,Width 80% (forecast-time),Interval score 80%,0.722621,0.722621
+rolling30,evaluation,spearman,Width 80% (forecast-time),|Coverage80 - 0.80|,-0.678920,0.678920
+rolling30,evaluation,spearman,Width 80% (forecast-time),|PIT mean - 0.50|,-0.369328,0.369328
+rolling30,evaluation,spearman,Width 80% (forecast-time),|PIT variance - 1/12|,-0.680072,0.680072
