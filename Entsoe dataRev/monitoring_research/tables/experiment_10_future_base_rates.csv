@@ -1,0 +1,4 @@
+horizon_days,eligible_days,base_future_exceedance_rate
+7,279,0.8387096774193549
+14,272,0.9154411764705882
+30,256,0.984375

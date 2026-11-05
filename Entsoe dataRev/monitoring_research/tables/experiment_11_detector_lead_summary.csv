@@ -1,0 +1,11 @@
+detector,sensitivity,total_notifications,notifications_before_first_onset,notifications_on_or_after_first_onset,first_notification,primary_onset_count,onsets_warned_7d,onsets_warned_14d,onsets_warned_30d,onsets_warned_60d
+ADWIN,high,3,1,2,2026-02-09,1,0,0,1,1
+ADWIN,low,3,1,2,2026-02-09,1,0,0,1,1
+ADWIN,medium,3,1,2,2026-02-09,1,0,0,1,1
+CUSUM,high,26,0,26,2026-03-16,1,0,0,0,0
+CUSUM,low,33,3,30,2026-01-21,1,1,1,1,1
+CUSUM,medium,30,2,28,2026-01-24,1,1,1,1,1
+FixedP95,reference,33,2,31,2026-01-20,1,1,1,1,1
+PageHinkley,high,6,1,5,2026-01-28,1,0,0,0,1
+PageHinkley,low,9,2,7,2026-01-26,1,0,1,1,1
+PageHinkley,medium,9,2,7,2026-01-20,1,0,0,1,1
