@@ -1,0 +1,5 @@
+metric,reference_p95,evaluation_alert_days,evaluation_valid_days
+coverage_rolling7_deviation_abs_pp,16.428571428571427,0,227
+coverage_daily_sd7_pp,21.458689806571947,19,227
+coverage_rolling30_deviation_abs_pp,12.270833333333323,0,227
+coverage_daily_sd30_pp,18.157269015688243,30,227

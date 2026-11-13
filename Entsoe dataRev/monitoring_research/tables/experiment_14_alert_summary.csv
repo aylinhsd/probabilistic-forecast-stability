@@ -1,0 +1,6 @@
+approach,alert_days,alert_pct,alert_episodes,evaluation_days
+Fixed CRPS,82,36.12334801762114,44,227
+Market-aware CRPS,73,32.158590308370044,42,227
+Relative rMAE,18,7.929515418502203,15,227
+Relative CRPSS,31,13.656387665198238,24,227
+Either relative signal,47,20.704845814977972,34,227
