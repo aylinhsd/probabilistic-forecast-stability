@@ -1,0 +1,43 @@
+{
+  "data_origin": "EXPERIMENT 14/14B DAILY INPUT: experiment_14_daily_monitoring.csv (not independently verified)",
+  "input_rows": 470,
+  "reference_days": 243,
+  "evaluation_days": 227,
+  "reference_end": "2026-02-28",
+  "evaluation_start": "2026-03-01",
+  "signals_tested": [
+    "absolute_crps",
+    "coverage_signed",
+    "coverage_undercoverage",
+    "coverage_overcoverage",
+    "coverage_absolute_deviation",
+    "rolling_coverage_deviation_14d",
+    "rolling_coverage_instability_14d",
+    "interval_width_change",
+    "relative_crps_skill_loss",
+    "relative_rmae",
+    "volatility_adjusted_crps",
+    "volatility_adjusted_width"
+  ],
+  "detectors_tested": [
+    "Fixed P95",
+    "CUSUM",
+    "Page-Hinkley",
+    "EWMA",
+    "ADWIN"
+  ],
+  "adwin_available": true,
+  "simulation_repetitions_per_scenario": 20,
+  "important_limits": [
+    "Historical alerts have NO independent ground-truth failure labels.",
+    "Controlled perturbations were made to monitoring SIGNALS, not coherent forecast distributions.",
+    "Synthetic detection rates are NOT estimates of real operational failure-detection performance.",
+    "Observed volatility and realized CRPS are ex-post, NOT forecast-time information.",
+    "Calibration deviation is bidirectional (undercoverage AND overcoverage), with dedicated directional signals.",
+    "Daily coverage has finite 24-hour sample resolution and serial dependence.",
+    "Detector thresholds were approximately matched on REFERENCE raw alarm-day rates, not independent event-level significance.",
+    "ADWIN is a two-sided mean-change detector while other sequential detectors here are one-sided upward; do not rank without direction-matched tests.",
+    "Coverage-width changes require joint interpretation; high width or high coverage alone does not prove model deterioration.",
+    "Default reference split may span less than one annual cycle; prefer explicit --reference-end and check seasonal sensitivity."
+  ]
+}

@@ -1,0 +1,61 @@
+signal,detector,detection_rate,median_detection_delay,pre_event_false_alarms_per_100_days,trials
+absolute_crps,ADWIN,0.25,11.0,0.0769230769230769,20
+absolute_crps,CUSUM,1.0,2.0,4.3076923076923075,20
+absolute_crps,EWMA,1.0,2.0,3.538461538461538,20
+absolute_crps,Fixed P95,0.95,4.0,5.3076923076923075,20
+absolute_crps,Page-Hinkley,1.0,3.0,4.384615384615385,20
+coverage_absolute_deviation,ADWIN,1.0,11.0,0.0,20
+coverage_absolute_deviation,CUSUM,1.0,1.0,2.0,20
+coverage_absolute_deviation,EWMA,1.0,1.0,0.6923076923076923,20
+coverage_absolute_deviation,Fixed P95,1.0,0.0,3.4615384615384617,20
+coverage_absolute_deviation,Page-Hinkley,1.0,0.0,4.615384615384615,20
+coverage_overcoverage,ADWIN,0.7,11.0,0.0,20
+coverage_overcoverage,CUSUM,1.0,1.0,0.6923076923076923,20
+coverage_overcoverage,EWMA,1.0,4.0,0.0,20
+coverage_overcoverage,Fixed P95,1.0,0.0,0.0,20
+coverage_overcoverage,Page-Hinkley,1.0,0.0,4.153846153846154,20
+coverage_signed,ADWIN,0.65,11.0,0.0,20
+coverage_signed,CUSUM,1.0,1.0,0.6153846153846154,20
+coverage_signed,EWMA,1.0,4.5,0.2307692307692307,20
+coverage_signed,Fixed P95,1.0,0.0,0.0,20
+coverage_signed,Page-Hinkley,1.0,1.0,3.1538461538461533,20
+coverage_undercoverage,ADWIN,0.7,11.0,0.0,20
+coverage_undercoverage,CUSUM,1.0,1.0,5.384615384615385,20
+coverage_undercoverage,EWMA,1.0,2.0,4.384615384615385,20
+coverage_undercoverage,Fixed P95,1.0,2.0,4.384615384615385,20
+coverage_undercoverage,Page-Hinkley,1.0,1.0,4.230769230769231,20
+interval_width_change,ADWIN,0.7,11.0,0.6923076923076923,20
+interval_width_change,CUSUM,1.0,2.0,3.384615384615385,20
+interval_width_change,EWMA,1.0,2.0,4.076923076923077,20
+interval_width_change,Fixed P95,1.0,0.5,3.9230769230769225,20
+interval_width_change,Page-Hinkley,1.0,2.0,5.230769230769231,20
+relative_crps_skill_loss,ADWIN,0.85,11.0,0.0,20
+relative_crps_skill_loss,CUSUM,1.0,0.0,4.769230769230769,20
+relative_crps_skill_loss,EWMA,1.0,1.0,3.9230769230769225,20
+relative_crps_skill_loss,Fixed P95,1.0,0.5,6.230769230769231,20
+relative_crps_skill_loss,Page-Hinkley,1.0,1.0,4.538461538461538,20
+relative_rmae,ADWIN,0.65,11.0,0.0,20
+relative_rmae,CUSUM,1.0,1.5,5.615384615384615,20
+relative_rmae,EWMA,1.0,1.0,6.0,20
+relative_rmae,Fixed P95,1.0,3.5,5.384615384615385,20
+relative_rmae,Page-Hinkley,1.0,1.0,4.923076923076923,20
+rolling_coverage_deviation_14d,ADWIN,0.7,11.0,0.1538461538461538,20
+rolling_coverage_deviation_14d,CUSUM,1.0,2.5,3.8461538461538463,20
+rolling_coverage_deviation_14d,EWMA,1.0,2.0,4.538461538461538,20
+rolling_coverage_deviation_14d,Fixed P95,1.0,4.0,7.0,20
+rolling_coverage_deviation_14d,Page-Hinkley,1.0,2.5,4.769230769230769,20
+rolling_coverage_instability_14d,ADWIN,0.7,11.0,0.3076923076923077,20
+rolling_coverage_instability_14d,CUSUM,1.0,2.0,4.153846153846154,20
+rolling_coverage_instability_14d,EWMA,1.0,2.0,3.692307692307693,20
+rolling_coverage_instability_14d,Fixed P95,0.85,5.0,5.153846153846154,20
+rolling_coverage_instability_14d,Page-Hinkley,1.0,2.0,4.0,20
+volatility_adjusted_crps,ADWIN,0.4,11.0,0.0,20
+volatility_adjusted_crps,CUSUM,1.0,2.0,4.923076923076923,20
+volatility_adjusted_crps,EWMA,1.0,3.0,4.538461538461538,20
+volatility_adjusted_crps,Fixed P95,1.0,2.0,4.615384615384615,20
+volatility_adjusted_crps,Page-Hinkley,1.0,2.0,4.153846153846154,20
+volatility_adjusted_width,ADWIN,0.85,11.0,0.0769230769230769,20
+volatility_adjusted_width,CUSUM,1.0,2.0,4.384615384615385,20
+volatility_adjusted_width,EWMA,1.0,2.0,3.4615384615384617,20
+volatility_adjusted_width,Fixed P95,1.0,0.0,5.076923076923077,20
+volatility_adjusted_width,Page-Hinkley,1.0,1.5,4.3076923076923075,20

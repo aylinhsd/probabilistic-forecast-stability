@@ -1,0 +1,3 @@
+period,days,mean_coverage_pct,mean_absolute_deviation_pp,under_80_days,over_80_days,exactly_80_days
+reference,243,87.22908093278464,13.47736625514403,66,176,1
+evaluation,227,80.46032050054266,12.887697120602695,100,127,0

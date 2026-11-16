@@ -1,0 +1,241 @@
+signal,detector,scenario,detection_rate,median_detection_delay,mean_pre_event_false_alarms,mean_pre_event_days,trials,pre_event_false_alarms_per_100_days
+absolute_crps,ADWIN,gradual_up,0.0,,0.0,65.0,20,0.0
+absolute_crps,ADWIN,none,,,0.15,200.0,20,0.075
+absolute_crps,ADWIN,shift_up,0.25,11.0,0.05,65.0,20,0.07692307692307693
+absolute_crps,ADWIN,temporary_up,0.0,,0.0,65.0,20,0.0
+absolute_crps,CUSUM,gradual_up,1.0,7.0,3.4,65.0,20,5.230769230769231
+absolute_crps,CUSUM,none,,,9.85,200.0,20,4.925
+absolute_crps,CUSUM,shift_up,1.0,2.0,2.8,65.0,20,4.3076923076923075
+absolute_crps,CUSUM,temporary_up,1.0,1.0,2.85,65.0,20,4.384615384615385
+absolute_crps,EWMA,gradual_up,1.0,10.5,2.9,65.0,20,4.461538461538462
+absolute_crps,EWMA,none,,,8.5,200.0,20,4.25
+absolute_crps,EWMA,shift_up,1.0,2.0,2.3,65.0,20,3.538461538461538
+absolute_crps,EWMA,temporary_up,0.9,1.0,2.75,65.0,20,4.230769230769231
+absolute_crps,Fixed P95,gradual_up,0.85,11.0,3.9,65.0,20,6.0
+absolute_crps,Fixed P95,none,,,10.75,200.0,20,5.375
+absolute_crps,Fixed P95,shift_up,0.95,4.0,3.45,65.0,20,5.3076923076923075
+absolute_crps,Fixed P95,temporary_up,0.65,1.0,4.2,65.0,20,6.461538461538462
+absolute_crps,Page-Hinkley,gradual_up,1.0,10.0,2.4,65.0,20,3.6923076923076925
+absolute_crps,Page-Hinkley,none,,,9.35,200.0,20,4.675
+absolute_crps,Page-Hinkley,shift_up,1.0,3.0,2.85,65.0,20,4.384615384615385
+absolute_crps,Page-Hinkley,temporary_up,0.95,1.0,3.0,65.0,20,4.615384615384615
+coverage_absolute_deviation,ADWIN,gradual_up,0.0,,0.0,65.0,20,0.0
+coverage_absolute_deviation,ADWIN,none,,,0.0,200.0,20,0.0
+coverage_absolute_deviation,ADWIN,shift_up,1.0,11.0,0.0,65.0,20,0.0
+coverage_absolute_deviation,ADWIN,temporary_up,0.0,,0.0,65.0,20,0.0
+coverage_absolute_deviation,CUSUM,gradual_up,1.0,9.5,1.15,65.0,20,1.769230769230769
+coverage_absolute_deviation,CUSUM,none,,,3.95,200.0,20,1.975
+coverage_absolute_deviation,CUSUM,shift_up,1.0,1.0,1.3,65.0,20,2.0
+coverage_absolute_deviation,CUSUM,temporary_up,1.0,0.0,1.45,65.0,20,2.230769230769231
+coverage_absolute_deviation,EWMA,gradual_up,1.0,10.5,0.3,65.0,20,0.46153846153846156
+coverage_absolute_deviation,EWMA,none,,,2.25,200.0,20,1.125
+coverage_absolute_deviation,EWMA,shift_up,1.0,1.0,0.45,65.0,20,0.6923076923076923
+coverage_absolute_deviation,EWMA,temporary_up,1.0,0.0,0.9,65.0,20,1.3846153846153846
+coverage_absolute_deviation,Fixed P95,gradual_up,1.0,5.5,2.8,65.0,20,4.3076923076923075
+coverage_absolute_deviation,Fixed P95,none,,,6.55,200.0,20,3.275
+coverage_absolute_deviation,Fixed P95,shift_up,1.0,0.0,2.25,65.0,20,3.4615384615384617
+coverage_absolute_deviation,Fixed P95,temporary_up,1.0,0.0,1.9,65.0,20,2.923076923076923
+coverage_absolute_deviation,Page-Hinkley,gradual_up,1.0,7.0,3.3,65.0,20,5.076923076923077
+coverage_absolute_deviation,Page-Hinkley,none,,,8.95,200.0,20,4.475
+coverage_absolute_deviation,Page-Hinkley,shift_up,1.0,0.0,3.0,65.0,20,4.615384615384615
+coverage_absolute_deviation,Page-Hinkley,temporary_up,1.0,0.0,1.8,65.0,20,2.769230769230769
+coverage_overcoverage,ADWIN,gradual_up,0.0,,0.0,65.0,20,0.0
+coverage_overcoverage,ADWIN,none,,,0.0,200.0,20,0.0
+coverage_overcoverage,ADWIN,shift_up,0.7,11.0,0.0,65.0,20,0.0
+coverage_overcoverage,ADWIN,temporary_up,0.0,,0.0,65.0,20,0.0
+coverage_overcoverage,CUSUM,gradual_up,1.0,13.5,0.5,65.0,20,0.7692307692307693
+coverage_overcoverage,CUSUM,none,,,1.3,200.0,20,0.65
+coverage_overcoverage,CUSUM,shift_up,1.0,1.0,0.45,65.0,20,0.6923076923076923
+coverage_overcoverage,CUSUM,temporary_up,1.0,0.0,0.7,65.0,20,1.0769230769230769
+coverage_overcoverage,EWMA,gradual_up,0.95,19.0,0.1,65.0,20,0.15384615384615385
+coverage_overcoverage,EWMA,none,,,0.0,200.0,20,0.0
+coverage_overcoverage,EWMA,shift_up,1.0,4.0,0.0,65.0,20,0.0
+coverage_overcoverage,EWMA,temporary_up,0.75,2.0,0.05,65.0,20,0.07692307692307693
+coverage_overcoverage,Fixed P95,gradual_up,1.0,3.5,0.0,65.0,20,0.0
+coverage_overcoverage,Fixed P95,none,,,0.0,200.0,20,0.0
+coverage_overcoverage,Fixed P95,shift_up,1.0,0.0,0.0,65.0,20,0.0
+coverage_overcoverage,Fixed P95,temporary_up,1.0,0.0,0.0,65.0,20,0.0
+coverage_overcoverage,Page-Hinkley,gradual_up,1.0,10.5,2.2,65.0,20,3.384615384615385
+coverage_overcoverage,Page-Hinkley,none,,,5.95,200.0,20,2.975
+coverage_overcoverage,Page-Hinkley,shift_up,1.0,0.0,2.7,65.0,20,4.153846153846154
+coverage_overcoverage,Page-Hinkley,temporary_up,0.95,0.0,2.5,65.0,20,3.8461538461538463
+coverage_signed,ADWIN,none,,,0.0,200.0,20,0.0
+coverage_signed,ADWIN,shift_down,0.75,11.0,0.0,65.0,20,0.0
+coverage_signed,ADWIN,shift_up,0.65,11.0,0.0,65.0,20,0.0
+coverage_signed,ADWIN,temporary_up,0.0,,0.0,65.0,20,0.0
+coverage_signed,CUSUM,none,,,1.6,200.0,20,0.8
+coverage_signed,CUSUM,shift_down,0.0,,0.55,65.0,20,0.8461538461538463
+coverage_signed,CUSUM,shift_up,1.0,1.0,0.4,65.0,20,0.6153846153846154
+coverage_signed,CUSUM,temporary_up,1.0,0.0,0.4,65.0,20,0.6153846153846154
+coverage_signed,EWMA,none,,,0.1,200.0,20,0.05
+coverage_signed,EWMA,shift_down,0.0,,0.0,65.0,20,0.0
+coverage_signed,EWMA,shift_up,1.0,4.5,0.15,65.0,20,0.23076923076923078
+coverage_signed,EWMA,temporary_up,0.65,2.0,0.0,65.0,20,0.0
+coverage_signed,Fixed P95,none,,,0.0,200.0,20,0.0
+coverage_signed,Fixed P95,shift_down,0.0,,0.0,65.0,20,0.0
+coverage_signed,Fixed P95,shift_up,1.0,0.0,0.0,65.0,20,0.0
+coverage_signed,Fixed P95,temporary_up,1.0,0.0,0.0,65.0,20,0.0
+coverage_signed,Page-Hinkley,none,,,6.35,200.0,20,3.175
+coverage_signed,Page-Hinkley,shift_down,0.0,,2.05,65.0,20,3.1538461538461533
+coverage_signed,Page-Hinkley,shift_up,1.0,1.0,2.05,65.0,20,3.1538461538461533
+coverage_signed,Page-Hinkley,temporary_up,1.0,0.0,1.65,65.0,20,2.5384615384615383
+coverage_undercoverage,ADWIN,gradual_up,0.0,,0.0,65.0,20,0.0
+coverage_undercoverage,ADWIN,none,,,0.0,200.0,20,0.0
+coverage_undercoverage,ADWIN,shift_up,0.7,11.0,0.0,65.0,20,0.0
+coverage_undercoverage,ADWIN,temporary_up,0.0,,0.0,65.0,20,0.0
+coverage_undercoverage,CUSUM,gradual_up,1.0,7.0,3.15,65.0,20,4.846153846153846
+coverage_undercoverage,CUSUM,none,,,9.8,200.0,20,4.9
+coverage_undercoverage,CUSUM,shift_up,1.0,1.0,3.5,65.0,20,5.384615384615385
+coverage_undercoverage,CUSUM,temporary_up,1.0,1.0,3.55,65.0,20,5.461538461538462
+coverage_undercoverage,EWMA,gradual_up,1.0,6.5,3.05,65.0,20,4.6923076923076925
+coverage_undercoverage,EWMA,none,,,8.95,200.0,20,4.475
+coverage_undercoverage,EWMA,shift_up,1.0,2.0,2.85,65.0,20,4.384615384615385
+coverage_undercoverage,EWMA,temporary_up,1.0,1.0,2.45,65.0,20,3.7692307692307696
+coverage_undercoverage,Fixed P95,gradual_up,1.0,8.5,2.1,65.0,20,3.230769230769231
+coverage_undercoverage,Fixed P95,none,,,7.25,200.0,20,3.625
+coverage_undercoverage,Fixed P95,shift_up,1.0,2.0,2.85,65.0,20,4.384615384615385
+coverage_undercoverage,Fixed P95,temporary_up,0.95,0.0,2.3,65.0,20,3.538461538461538
+coverage_undercoverage,Page-Hinkley,gradual_up,1.0,8.0,2.25,65.0,20,3.4615384615384617
+coverage_undercoverage,Page-Hinkley,none,,,8.85,200.0,20,4.425
+coverage_undercoverage,Page-Hinkley,shift_up,1.0,1.0,2.75,65.0,20,4.230769230769231
+coverage_undercoverage,Page-Hinkley,temporary_up,1.0,1.0,3.45,65.0,20,5.3076923076923075
+interval_width_change,ADWIN,gradual_up,0.1,11.0,0.6,65.0,20,0.9230769230769231
+interval_width_change,ADWIN,none,,,0.7,200.0,20,0.35
+interval_width_change,ADWIN,shift_up,0.7,11.0,0.45,65.0,20,0.6923076923076923
+interval_width_change,ADWIN,temporary_up,0.0,,0.5,65.0,20,0.7692307692307693
+interval_width_change,CUSUM,gradual_up,1.0,9.5,2.5,65.0,20,3.8461538461538463
+interval_width_change,CUSUM,none,,,9.85,200.0,20,4.925
+interval_width_change,CUSUM,shift_up,1.0,2.0,2.2,65.0,20,3.384615384615385
+interval_width_change,CUSUM,temporary_up,1.0,1.0,2.55,65.0,20,3.9230769230769225
+interval_width_change,EWMA,gradual_up,1.0,9.0,1.9,65.0,20,2.923076923076923
+interval_width_change,EWMA,none,,,7.65,200.0,20,3.825
+interval_width_change,EWMA,shift_up,1.0,2.0,2.65,65.0,20,4.076923076923077
+interval_width_change,EWMA,temporary_up,0.95,1.0,2.7,65.0,20,4.153846153846154
+interval_width_change,Fixed P95,gradual_up,0.95,8.0,3.75,65.0,20,5.769230769230769
+interval_width_change,Fixed P95,none,,,12.1,200.0,20,6.05
+interval_width_change,Fixed P95,shift_up,1.0,0.5,2.55,65.0,20,3.9230769230769225
+interval_width_change,Fixed P95,temporary_up,1.0,0.0,2.85,65.0,20,4.384615384615385
+interval_width_change,Page-Hinkley,gradual_up,1.0,9.0,2.9,65.0,20,4.461538461538462
+interval_width_change,Page-Hinkley,none,,,10.3,200.0,20,5.15
+interval_width_change,Page-Hinkley,shift_up,1.0,2.0,3.4,65.0,20,5.230769230769231
+interval_width_change,Page-Hinkley,temporary_up,1.0,0.5,3.4,65.0,20,5.230769230769231
+relative_crps_skill_loss,ADWIN,gradual_up,0.0,,0.0,65.0,20,0.0
+relative_crps_skill_loss,ADWIN,none,,,0.0,200.0,20,0.0
+relative_crps_skill_loss,ADWIN,shift_up,0.85,11.0,0.0,65.0,20,0.0
+relative_crps_skill_loss,ADWIN,temporary_up,0.0,,0.0,65.0,20,0.0
+relative_crps_skill_loss,CUSUM,gradual_up,1.0,9.0,2.8,65.0,20,4.3076923076923075
+relative_crps_skill_loss,CUSUM,none,,,9.55,200.0,20,4.775
+relative_crps_skill_loss,CUSUM,shift_up,1.0,0.0,3.1,65.0,20,4.769230769230769
+relative_crps_skill_loss,CUSUM,temporary_up,1.0,0.0,2.6,65.0,20,4.0
+relative_crps_skill_loss,EWMA,gradual_up,1.0,8.5,3.4,65.0,20,5.230769230769231
+relative_crps_skill_loss,EWMA,none,,,8.6,200.0,20,4.3
+relative_crps_skill_loss,EWMA,shift_up,1.0,1.0,2.55,65.0,20,3.9230769230769225
+relative_crps_skill_loss,EWMA,temporary_up,1.0,0.0,3.45,65.0,20,5.3076923076923075
+relative_crps_skill_loss,Fixed P95,gradual_up,1.0,9.5,3.5,65.0,20,5.384615384615385
+relative_crps_skill_loss,Fixed P95,none,,,9.45,200.0,20,4.725
+relative_crps_skill_loss,Fixed P95,shift_up,1.0,0.5,4.05,65.0,20,6.230769230769231
+relative_crps_skill_loss,Fixed P95,temporary_up,1.0,0.0,3.7,65.0,20,5.6923076923076925
+relative_crps_skill_loss,Page-Hinkley,gradual_up,1.0,8.0,3.05,65.0,20,4.6923076923076925
+relative_crps_skill_loss,Page-Hinkley,none,,,8.05,200.0,20,4.025
+relative_crps_skill_loss,Page-Hinkley,shift_up,1.0,1.0,2.95,65.0,20,4.538461538461538
+relative_crps_skill_loss,Page-Hinkley,temporary_up,1.0,0.0,2.15,65.0,20,3.3076923076923075
+relative_rmae,ADWIN,gradual_up,0.0,,0.0,65.0,20,0.0
+relative_rmae,ADWIN,none,,,0.0,200.0,20,0.0
+relative_rmae,ADWIN,shift_up,0.65,11.0,0.0,65.0,20,0.0
+relative_rmae,ADWIN,temporary_up,0.0,,0.0,65.0,20,0.0
+relative_rmae,CUSUM,gradual_up,1.0,5.5,4.05,65.0,20,6.230769230769231
+relative_rmae,CUSUM,none,,,12.75,200.0,20,6.375
+relative_rmae,CUSUM,shift_up,1.0,1.5,3.65,65.0,20,5.615384615384615
+relative_rmae,CUSUM,temporary_up,1.0,1.0,3.3,65.0,20,5.076923076923077
+relative_rmae,EWMA,gradual_up,1.0,9.0,3.5,65.0,20,5.384615384615385
+relative_rmae,EWMA,none,,,11.45,200.0,20,5.725
+relative_rmae,EWMA,shift_up,1.0,1.0,3.9,65.0,20,6.0
+relative_rmae,EWMA,temporary_up,1.0,0.5,3.35,65.0,20,5.153846153846154
+relative_rmae,Fixed P95,gradual_up,1.0,8.5,2.9,65.0,20,4.461538461538462
+relative_rmae,Fixed P95,none,,,9.55,200.0,20,4.775
+relative_rmae,Fixed P95,shift_up,1.0,3.5,3.5,65.0,20,5.384615384615385
+relative_rmae,Fixed P95,temporary_up,1.0,0.0,3.35,65.0,20,5.153846153846154
+relative_rmae,Page-Hinkley,gradual_up,1.0,7.0,2.95,65.0,20,4.538461538461538
+relative_rmae,Page-Hinkley,none,,,9.65,200.0,20,4.825
+relative_rmae,Page-Hinkley,shift_up,1.0,1.0,3.2,65.0,20,4.923076923076923
+relative_rmae,Page-Hinkley,temporary_up,1.0,0.0,3.2,65.0,20,4.923076923076923
+rolling_coverage_deviation_14d,ADWIN,gradual_up,0.3,11.0,0.1,65.0,20,0.15384615384615385
+rolling_coverage_deviation_14d,ADWIN,none,,,1.15,200.0,20,0.575
+rolling_coverage_deviation_14d,ADWIN,shift_up,0.7,11.0,0.1,65.0,20,0.15384615384615385
+rolling_coverage_deviation_14d,ADWIN,temporary_up,0.0,,0.05,65.0,20,0.07692307692307693
+rolling_coverage_deviation_14d,CUSUM,gradual_up,0.75,15.0,2.3,65.0,20,3.538461538461538
+rolling_coverage_deviation_14d,CUSUM,none,,,7.7,200.0,20,3.85
+rolling_coverage_deviation_14d,CUSUM,shift_up,1.0,2.5,2.5,65.0,20,3.8461538461538463
+rolling_coverage_deviation_14d,CUSUM,temporary_up,1.0,0.0,3.0,65.0,20,4.615384615384615
+rolling_coverage_deviation_14d,EWMA,gradual_up,1.0,13.0,3.15,65.0,20,4.846153846153846
+rolling_coverage_deviation_14d,EWMA,none,,,10.55,200.0,20,5.275
+rolling_coverage_deviation_14d,EWMA,shift_up,1.0,2.0,2.95,65.0,20,4.538461538461538
+rolling_coverage_deviation_14d,EWMA,temporary_up,0.8,1.0,2.8,65.0,20,4.3076923076923075
+rolling_coverage_deviation_14d,Fixed P95,gradual_up,0.85,12.0,3.6,65.0,20,5.538461538461538
+rolling_coverage_deviation_14d,Fixed P95,none,,,10.95,200.0,20,5.475
+rolling_coverage_deviation_14d,Fixed P95,shift_up,1.0,4.0,4.55,65.0,20,7.0
+rolling_coverage_deviation_14d,Fixed P95,temporary_up,1.0,0.0,2.55,65.0,20,3.9230769230769225
+rolling_coverage_deviation_14d,Page-Hinkley,gradual_up,1.0,8.0,3.05,65.0,20,4.6923076923076925
+rolling_coverage_deviation_14d,Page-Hinkley,none,,,7.9,200.0,20,3.95
+rolling_coverage_deviation_14d,Page-Hinkley,shift_up,1.0,2.5,3.1,65.0,20,4.769230769230769
+rolling_coverage_deviation_14d,Page-Hinkley,temporary_up,0.85,1.0,2.75,65.0,20,4.230769230769231
+rolling_coverage_instability_14d,ADWIN,gradual_up,0.2,11.0,0.2,65.0,20,0.3076923076923077
+rolling_coverage_instability_14d,ADWIN,none,,,0.95,200.0,20,0.475
+rolling_coverage_instability_14d,ADWIN,shift_up,0.7,11.0,0.2,65.0,20,0.3076923076923077
+rolling_coverage_instability_14d,ADWIN,temporary_up,0.0,,0.1,65.0,20,0.15384615384615385
+rolling_coverage_instability_14d,CUSUM,gradual_up,0.95,13.0,3.85,65.0,20,5.923076923076923
+rolling_coverage_instability_14d,CUSUM,none,,,10.65,200.0,20,5.325
+rolling_coverage_instability_14d,CUSUM,shift_up,1.0,2.0,2.7,65.0,20,4.153846153846154
+rolling_coverage_instability_14d,CUSUM,temporary_up,1.0,1.0,4.0,65.0,20,6.153846153846154
+rolling_coverage_instability_14d,EWMA,gradual_up,0.9,15.5,2.9,65.0,20,4.461538461538462
+rolling_coverage_instability_14d,EWMA,none,,,9.05,200.0,20,4.525
+rolling_coverage_instability_14d,EWMA,shift_up,1.0,2.0,2.4,65.0,20,3.6923076923076925
+rolling_coverage_instability_14d,EWMA,temporary_up,0.9,1.5,2.65,65.0,20,4.076923076923077
+rolling_coverage_instability_14d,Fixed P95,gradual_up,0.45,22.0,3.45,65.0,20,5.3076923076923075
+rolling_coverage_instability_14d,Fixed P95,none,,,12.75,200.0,20,6.375
+rolling_coverage_instability_14d,Fixed P95,shift_up,0.85,5.0,3.35,65.0,20,5.153846153846154
+rolling_coverage_instability_14d,Fixed P95,temporary_up,0.65,0.0,3.15,65.0,20,4.846153846153846
+rolling_coverage_instability_14d,Page-Hinkley,gradual_up,0.9,21.5,3.1,65.0,20,4.769230769230769
+rolling_coverage_instability_14d,Page-Hinkley,none,,,8.3,200.0,20,4.15
+rolling_coverage_instability_14d,Page-Hinkley,shift_up,1.0,2.0,2.6,65.0,20,4.0
+rolling_coverage_instability_14d,Page-Hinkley,temporary_up,0.85,1.0,2.8,65.0,20,4.3076923076923075
+volatility_adjusted_crps,ADWIN,gradual_up,0.0,,0.0,65.0,20,0.0
+volatility_adjusted_crps,ADWIN,none,,,0.05,200.0,20,0.025
+volatility_adjusted_crps,ADWIN,shift_up,0.4,11.0,0.0,65.0,20,0.0
+volatility_adjusted_crps,ADWIN,temporary_up,0.0,,0.0,65.0,20,0.0
+volatility_adjusted_crps,CUSUM,gradual_up,1.0,6.0,3.2,65.0,20,4.923076923076923
+volatility_adjusted_crps,CUSUM,none,,,9.55,200.0,20,4.775
+volatility_adjusted_crps,CUSUM,shift_up,1.0,2.0,3.2,65.0,20,4.923076923076923
+volatility_adjusted_crps,CUSUM,temporary_up,0.9,1.0,2.8,65.0,20,4.3076923076923075
+volatility_adjusted_crps,EWMA,gradual_up,1.0,8.5,2.8,65.0,20,4.3076923076923075
+volatility_adjusted_crps,EWMA,none,,,9.9,200.0,20,4.95
+volatility_adjusted_crps,EWMA,shift_up,1.0,3.0,2.95,65.0,20,4.538461538461538
+volatility_adjusted_crps,EWMA,temporary_up,1.0,1.0,3.0,65.0,20,4.615384615384615
+volatility_adjusted_crps,Fixed P95,gradual_up,0.95,12.0,4.05,65.0,20,6.230769230769231
+volatility_adjusted_crps,Fixed P95,none,,,11.0,200.0,20,5.5
+volatility_adjusted_crps,Fixed P95,shift_up,1.0,2.0,3.0,65.0,20,4.615384615384615
+volatility_adjusted_crps,Fixed P95,temporary_up,0.9,0.0,4.7,65.0,20,7.230769230769231
+volatility_adjusted_crps,Page-Hinkley,gradual_up,0.95,10.0,3.25,65.0,20,5.0
+volatility_adjusted_crps,Page-Hinkley,none,,,9.25,200.0,20,4.625
+volatility_adjusted_crps,Page-Hinkley,shift_up,1.0,2.0,2.7,65.0,20,4.153846153846154
+volatility_adjusted_crps,Page-Hinkley,temporary_up,0.9,1.0,2.7,65.0,20,4.153846153846154
+volatility_adjusted_width,ADWIN,gradual_up,0.15,11.0,0.1,65.0,20,0.15384615384615385
+volatility_adjusted_width,ADWIN,none,,,0.2,200.0,20,0.1
+volatility_adjusted_width,ADWIN,shift_up,0.85,11.0,0.05,65.0,20,0.07692307692307693
+volatility_adjusted_width,ADWIN,temporary_up,0.0,,0.05,65.0,20,0.07692307692307693
+volatility_adjusted_width,CUSUM,gradual_up,1.0,7.5,2.8,65.0,20,4.3076923076923075
+volatility_adjusted_width,CUSUM,none,,,9.05,200.0,20,4.525
+volatility_adjusted_width,CUSUM,shift_up,1.0,2.0,2.85,65.0,20,4.384615384615385
+volatility_adjusted_width,CUSUM,temporary_up,1.0,1.0,3.3,65.0,20,5.076923076923077
+volatility_adjusted_width,EWMA,gradual_up,1.0,13.0,2.95,65.0,20,4.538461538461538
+volatility_adjusted_width,EWMA,none,,,6.8,200.0,20,3.4
+volatility_adjusted_width,EWMA,shift_up,1.0,2.0,2.25,65.0,20,3.4615384615384617
+volatility_adjusted_width,EWMA,temporary_up,0.85,0.0,2.35,65.0,20,3.6153846153846154
+volatility_adjusted_width,Fixed P95,gradual_up,1.0,10.5,3.6,65.0,20,5.538461538461538
+volatility_adjusted_width,Fixed P95,none,,,8.75,200.0,20,4.375
+volatility_adjusted_width,Fixed P95,shift_up,1.0,0.0,3.3,65.0,20,5.076923076923077
+volatility_adjusted_width,Fixed P95,temporary_up,1.0,0.0,3.3,65.0,20,5.076923076923077
+volatility_adjusted_width,Page-Hinkley,gradual_up,1.0,12.0,3.05,65.0,20,4.6923076923076925
+volatility_adjusted_width,Page-Hinkley,none,,,8.5,200.0,20,4.25
+volatility_adjusted_width,Page-Hinkley,shift_up,1.0,1.5,2.8,65.0,20,4.3076923076923075
+volatility_adjusted_width,Page-Hinkley,temporary_up,1.0,1.0,2.8,65.0,20,4.3076923076923075
