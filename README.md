@@ -1,1 +1,2 @@
 # Probabilistic Electricity Price Forecasting: Stability Monitoring and Early Warning
+This repository contains a research framework for evaluating the stability and reliability of probabilistic electricity price forecasts. Using a probabilistic LEAR v3 implementation as an initial testbed, the project investigates forecast calibration, market volatility, benchmark-relative performance, and statistical change-detection methods. The longer-term objective is to develop reliable forecast health monitoring and early-warning approaches.
