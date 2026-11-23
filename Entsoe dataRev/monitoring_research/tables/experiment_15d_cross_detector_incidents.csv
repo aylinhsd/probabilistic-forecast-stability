@@ -1,0 +1,4 @@
+incident_id,start_date,end_date,span_calendar_days,active_raw_alert_days,detectors,number_detectors,trigger_signals,related_per_method_episodes,confirmed_deterioration
+INC_001,2026-03-04,2026-03-04,1,1,Fixed P95;CUSUM;Page-Hinkley;EWMA,4,absolute_crps,4,UNKNOWN
+INC_002,2026-03-09,2026-03-11,3,3,Fixed P95;CUSUM;Page-Hinkley;EWMA,4,absolute_crps;width_high,4,UNKNOWN
+INC_003,2026-03-16,2026-10-13,212,195,Fixed P95;CUSUM;Page-Hinkley;EWMA;ADWIN,5,absolute_crps;coverage_under;coverage_over;width_high,17,UNKNOWN

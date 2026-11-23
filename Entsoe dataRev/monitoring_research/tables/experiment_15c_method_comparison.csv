@@ -1,0 +1,6 @@
+method,settings,cal_budget_met,cal_null_notifications_per_100_days,heldout_null_notifications_per_100_days,sustained_detected_30d_pct,weak_sustained_detected_30d_pct,moderate_sustained_detected_30d_pct,gradual_detected_30d_pct,temporary_detected_30d_pct,sustained_median_delay_detected_days,incremental_sustained_detection_pct,paired_null_notifications_in_event_window_pct,historical_evaluation_notifications_unlabeled,historical_notif_per_100_days
+Page-Hinkley,"{""h"": 18, ""delta"": 0.15}",True,2.75,2.8,98.7,96.0,100.0,91.7,79.3,7.0,26.7,72.0,23,10.13
+EWMA,"{""L"": 4, ""alpha"": 0.2}",True,3.12,3.35,94.7,85.0,99.0,87.3,77.0,6.0,26.7,68.0,25,11.01
+CUSUM,"{""h"": 12, ""k"": 0.5}",True,2.42,2.64,93.7,81.0,100.0,84.0,64.7,7.0,37.7,56.0,25,11.01
+Fixed P95,"{""q"": 0.99}",True,2.79,3.08,82.3,77.0,82.0,78.7,71.3,7.0,14.3,68.0,26,11.45
+ADWIN,"{""delta"": 0.1}",True,1.1,1.02,81.3,55.0,93.0,66.0,19.3,30.0,62.3,20.0,4,1.76

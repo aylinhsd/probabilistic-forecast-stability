@@ -1,0 +1,51 @@
+{
+  "experiment": "15c",
+  "source": "Actual saved probabilistic forecast outputs: ENTSOE_Probabilistic_LEAR_v3_predictions.csv",
+  "reference_end": "2026-02-28",
+  "fit_period": [
+    "2025-07-01",
+    "2025-12-07"
+  ],
+  "calibration_days_present_but_not_used_for_null_training": [
+    "2025-12-08",
+    "2026-02-28"
+  ],
+  "evaluation_period": [
+    "2026-03-01",
+    "2026-10-13"
+  ],
+  "fit_days": 160,
+  "reference_total_days": 243,
+  "evaluation_days": 227,
+  "calibration_strategy": "Block-bootstrap on FIT baseline only; no evaluation leakage",
+  "threshold_selection": "Closest calibrated mean notification count at or under target on synthetic null; otherwise most conservative and flag",
+  "budget_notifications_per_100_null_days": 3.3333333333333335,
+  "cooldown_days": 7,
+  "random_seed": 15032026,
+  "calibration_null_trials": 12,
+  "heldout_null_trials": 25,
+  "controlled_change_trials_per_signal_scenario": 25,
+  "block_days": 7,
+  "shift_multipliers": [
+    0.75,
+    1.5,
+    2.5
+  ],
+  "event_day": 65,
+  "detection_window_days": 30,
+  "signals": [
+    "absolute_crps",
+    "coverage_under",
+    "coverage_over",
+    "width_high"
+  ],
+  "methods": [
+    "Fixed P95",
+    "CUSUM",
+    "Page-Hinkley",
+    "EWMA",
+    "ADWIN"
+  ],
+  "river_ADWIN_available": true,
+  "warning": "Historical notifications are unlabeled. Bootstrap no-change days may not reproduce true no-change conditions. Synthetic signal shifts are not coherent forecast perturbations. Do not interpret as real false-alarm rate or auto-retrain recommendation."
+}

@@ -570,6 +570,33 @@ def _finish(fig, folder, filename):
     return filename
 
 
+def save_coverage_30day_deviation(raw, evaluation_start, folder):
+    """Export the lower two-sided coverage panel as a standalone PNG and PDF."""
+    # Calculate the rolling mean before selecting evaluation dates so the first
+    # evaluation points retain the same reference history as the original panel.
+    coverage = raw['pi80_coverage'].to_numpy(float)
+    deviation = pd.Series(coverage).rolling(30, min_periods=30).mean()*100 - 80
+    evaluation = raw['date'] >= pd.Timestamp(evaluation_start)
+    dates, values = raw.loc[evaluation, 'date'], deviation[evaluation]
+    fig, ax = plt.subplots(figsize=(14, 4.6))
+    ax.plot(dates, values, color='#58529e', lw=1.8)
+    ax.axhline(0, color='black', ls='--')
+    ax.fill_between(dates, values, 0, where=values < 0,
+                    alpha=.2, color='red', label='Undercoverage')
+    ax.fill_between(dates, values, 0, where=values > 0,
+                    alpha=.2, color='blue', label='Overcoverage')
+    ax.set(title='30-day coverage deviation from the 80% target',
+           ylabel='30-day deviation (percentage points)', xlabel='Date')
+    ax.legend(loc='best')
+    ax.grid(alpha=.2)
+    fig.tight_layout()
+    name = 'experiment_15_coverage_30day_deviation'
+    for extension in ('png', 'pdf'):
+        fig.savefig(folder / f'{name}.{extension}', dpi=300, bbox_inches='tight')
+    plt.close(fig)
+    return f'{name}.png'
+
+
 def expanded_figures(root):
     t, f = root/'tables', root/'figures'
     raw = pd.read_csv(t/'experiment_15_input_daily_checked.csv', parse_dates=['date'])
@@ -604,6 +631,7 @@ def expanded_figures(root):
     axes[1].legend(loc='best')
     for ax in axes: ax.grid(alpha=.2)
     figures.append(_finish(fig, f, 'experiment_15_coverage_two_sided.png'))
+    figures.append(save_coverage_30day_deviation(raw, evaluation_start, f))
 
     # 2. Normalization to a 0..1 visual not appropriate for raw signals; use 2-panel
     #    calibration deviation and daily coverage standard deviation instead.

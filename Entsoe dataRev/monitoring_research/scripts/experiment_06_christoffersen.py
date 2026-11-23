@@ -1,4 +1,5 @@
 
+import argparse
 from pathlib import Path
 import numpy as np
 import pandas as pd
@@ -28,6 +29,68 @@ ALPHA = 0.05
 # Minimum observations for descriptive test reporting.
 # This does not guarantee asymptotic validity.
 MIN_N = 100
+
+
+def plot_day_night_coverage(daynight):
+    """Show day/night coverage directly, with exact percentages and targets."""
+    colors = {"Day": "#64B6AC", "Night": "#9183B8"}
+    ink = "#203344"
+    periods = ["Reference", "Evaluation"]
+    dates = {"Reference": "Jul–Dec 2025", "Evaluation": "Jan–13 Oct 2026"}
+    levels = [int(round(level * 100)) for level in LEVELS]
+
+    fig, axes = plt.subplots(1, 2, figsize=(12.5, 5.6), sharey=True, facecolor="white")
+    fig.subplots_adjust(left=0.075, right=0.98, bottom=0.20, top=0.76, wspace=0.16)
+    fig.suptitle("Day vs night coverage", y=0.97, fontsize=20, weight="bold", color=ink)
+    handles = [matplotlib.patches.Patch(facecolor=colors[s], label=s)
+               for s in ("Day", "Night")]
+    handles.append(matplotlib.lines.Line2D([], [], color=ink, linestyle="--", label="Target"))
+    fig.legend(handles=handles, loc="upper center", bbox_to_anchor=(0.5, 0.915),
+               ncol=3, frameon=False, fontsize=11)
+
+    x = np.arange(len(levels))
+    for ax, period in zip(axes, periods):
+        sub = daynight.loc[daynight["period"].eq(period)]
+        ax.set_axisbelow(True)
+        for segment, offset in (("Day", -0.18), ("Night", 0.18)):
+            group = sub.loc[sub["group"].eq(segment)].set_index("interval").loc[levels]
+            values = group["observed_coverage"].to_numpy() * 100
+            bars = ax.bar(x + offset, values, width=0.34, color=colors[segment], zorder=2)
+            ax.bar_label(bars, labels=[f"{value:.2f}%" for value in values],
+                         padding=5, fontsize=10.5, weight="bold", color=ink,
+                         zorder=4, bbox=dict(facecolor="white", edgecolor="none", pad=0.5))
+        # Each pair has its own short target line.
+        ax.hlines(levels, x - 0.39, x + 0.39, colors=ink,
+                  linestyles="--", linewidth=1.6, zorder=3)
+        ax.set_xticks(x, [f"{level}%" for level in levels])
+        ax.set_ylim(0, 106)
+        ax.set_yticks(np.arange(0, 101, 20))
+        ax.set_xlabel("Target coverage", fontsize=11, labelpad=10)
+        ax.set_title(f"{period}\n{dates[period]}", fontsize=12, color=ink, pad=13)
+        ax.tick_params(axis="both", labelsize=11, length=0, pad=7)
+        ax.grid(axis="y", color="#E3E8EC", linewidth=0.7)
+        for side in ("top", "right", "left"):
+            ax.spines[side].set_visible(False)
+        ax.spines["bottom"].set_color("#CCD5DC")
+
+    axes[0].set_ylabel("Actual coverage (%)", fontsize=11, labelpad=10)
+    fig.text(0.5, 0.055,
+             "Day: 06:00–17:59  |  Night: 18:00–05:59  |  Italian local time",
+             ha="center", fontsize=10, color="#526374")
+    for extension in ("png", "pdf"):
+        fig.savefig(FIGURES / f"experiment_06_day_night_coverage.{extension}",
+                    dpi=300, bbox_inches="tight", facecolor="white")
+    plt.close(fig)
+
+
+parser = argparse.ArgumentParser(description="Experiment 06: interval reliability")
+parser.add_argument("--day-night-only", action="store_true",
+                    help="Redraw only the day/night PNG and PDF from the existing summary table")
+args = parser.parse_args()
+if args.day_night_only:
+    plot_day_night_coverage(pd.read_csv(TABLES / "experiment_06_day_night.csv"))
+    print("Updated experiment_06_day_night_coverage.png and .pdf from the saved results.")
+    raise SystemExit(0)
 
 # --------------------------------------------------
 # 1. LOAD DATA
@@ -68,7 +131,7 @@ df = df[
 
 df["period"] = np.where(
     df["date"] <= "2025-12-31",
-    "Calibration",
+    "Reference",
     "Evaluation"
 )
 
@@ -399,7 +462,7 @@ def save_figure(fig, name):
 fig, axes = plt.subplots(1, 2, figsize=(13, 5))
 
 for ax, period in zip(
-    axes, ["Calibration", "Evaluation"]
+    axes, ["Reference", "Evaluation"]
 ):
     sub = overall[
         overall["period"] == period
@@ -435,43 +498,14 @@ fig.suptitle("LEAR v3 — Nominal vs Observed Coverage")
 save_figure(fig, "experiment_06_coverage_comparison")
 
 
-# Figure 2: Day/night signed coverage errors
-fig, axes = plt.subplots(1, 2, figsize=(13, 5), sharey=True)
-
-for ax, period in zip(
-    axes, ["Calibration", "Evaluation"]
-):
-    sub = daynight[
-        daynight["period"] == period
-    ]
-
-    for segment in ["Day", "Night"]:
-        group = sub[
-            sub["group"] == segment
-        ].sort_values("interval")
-
-        ax.plot(
-            group["interval"],
-            group["signed_coverage_error_pp"],
-            marker="o",
-            label=segment
-        )
-
-    ax.axhline(0, color="black", linestyle="--")
-    ax.set_title(period)
-    ax.set_xlabel("Nominal interval (%)")
-    ax.set_ylabel("Observed minus nominal (pp)")
-    ax.legend()
-    ax.grid(alpha=0.2)
-
-fig.suptitle("LEAR v3 — Day/Night Calibration Errors")
-save_figure(fig, "experiment_06_day_night_coverage")
+# Figure 2: Day/night observed coverage and nominal targets
+plot_day_night_coverage(daynight)
 
 
 # Figure 3: Hourly signed coverage error, 80% interval
 fig, ax = plt.subplots(figsize=(13, 5))
 
-for period in ["Calibration", "Evaluation"]:
+for period in ["Reference", "Evaluation"]:
     sub = hourly[
         (hourly["period"] == period)
         & (hourly["interval"] == 80)
@@ -564,7 +598,7 @@ undesirable deviations from nominal calibration.
 
 ## Periods
 
-Calibration: 2025-07-01 to 2025-12-31
+Reference: 2025-07-01 to 2025-12-31
 Evaluation: 2026-01-01 to 2026-10-13
 
 ## Intervals

@@ -1,0 +1,31 @@
+{
+  "source": "/Users/aylin/Documents/FBK/codes/Entsoe dataRev/ENTSOE_Probabilistic_LEAR_v3_predictions.csv",
+  "point_source": "/Users/aylin/Documents/FBK/codes/Entsoe dataRev/ENTSOE_LEAR_v3_predictions.csv",
+  "fit_days": 160,
+  "ref_days": 243,
+  "eval_days": 227,
+  "reference_end": "2026-02-28",
+  "core_script": "/Users/aylin/Documents/FBK/codes/Entsoe dataRev/monitoring_research/scripts/experiment_15c_reliable_detector_selection.py",
+  "synthetic_fixture": false,
+  "methods_and_settings": {
+    "Fixed P95": {
+      "q": 0.99
+    },
+    "CUSUM": {
+      "h": 5,
+      "k": 0.5
+    },
+    "Page-Hinkley": {
+      "h": 8,
+      "delta": 0.15
+    },
+    "EWMA": {
+      "L": 2.5,
+      "alpha": 0.2
+    },
+    "ADWIN": {
+      "delta": 0.002
+    }
+  },
+  "note": "Real alerts unlabeled; chronological controlled tests change only copied indicator arrays."
+}

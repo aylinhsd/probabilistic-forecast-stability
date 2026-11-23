@@ -1,0 +1,6 @@
+method,tests,detection_pct,paired_baseline_alert_pct,incremental_detection_pct,median_detected_delay_days
+ADWIN,108,72.2,66.7,5.6,17.0
+CUSUM,108,100.0,100.0,0.0,7.0
+EWMA,108,100.0,100.0,0.0,7.0
+Fixed P95,108,34.3,0.0,34.3,11.0
+Page-Hinkley,108,100.0,100.0,0.0,1.0
